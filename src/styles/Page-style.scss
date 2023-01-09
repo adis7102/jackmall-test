@@ -1,0 +1,86 @@
+.track-list {
+  padding: 20px;
+
+  &-title {
+    font-weight: 500;
+    font-size: 38px;
+  }
+
+  &-wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    a {
+      text-decoration: none;
+    }
+
+    .card-content {
+      width: 400px;
+      margin-bottom: 10px;
+      border: 2px solid white;
+      display: flex;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-right: 50px;
+
+      .rank-wrap {
+        position: relative;
+
+        .rank-triangle {
+          position: absolute;
+          z-index: 1;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 50px 50px 0 0;
+          border-color: #f0932b transparent transparent transparent;
+        }
+
+        .rank-text {
+          position: absolute;
+          z-index: 2;
+          top: 5px;
+          left: 8px;
+
+          p {
+            color: white;
+            font-weight: 800;
+          }
+        }
+      }
+
+      img {
+        float: left;
+        width:  180px;
+        height: 180px;
+        object-fit: cover;
+      }
+
+      &-desc {
+        padding: 10px;
+
+        &-text-wrap {
+          margin-bottom: 8px;
+
+          p {
+            font-size: 18px;
+          }
+
+          .place-holder {
+            font-size: 11px;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &.song-title {
+            P {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

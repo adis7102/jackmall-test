@@ -1,0 +1,17 @@
+@import '../../styles/fonts';
+@import '../../styles/colors';
+
+html, body {
+  font-family: 'Inter-Regular' !important;
+  padding: 0;
+  margin: 0;
+  background-color: $color-background;
+}
+
+h1, h2, h3, p {
+  margin: 0 !important;
+}
+
+.layout {
+  padding: 55px 50px;
+}
